@@ -1,7 +1,6 @@
 # Customer Churn Prediction
 This repository contains a Machine Learning pipeline for bank customer churn prediction using various classification models, including Logistic Regression, Random Forest, and Boosting methods. The pipeline includes data preprocessing, feature engineering, model training, evaluation, and visualization.
 
-
 ## Project Overview
 The goal of this project is to predict whether a bank customer will subscribe to a term deposit based on demographic and financial attributes. The key objectives are:
 - Build a baseline model with Logistic Regression.
@@ -11,6 +10,7 @@ The goal of this project is to predict whether a bank customer will subscribe to
 - Interpret the results using a confusion matrix and confidence analysis.
 
 ## Dataset
+The data from the UCI Machine Learning Repository is related with direct marketing campaigns (phone calls) of a Portuguese banking institution.
 The dataset consists of customer data with features such as:
 - Demographic information (age, job, marital status, education, etc.)
 - Previous interactions (campaign contacts, previous outcomes, etc.)
@@ -33,6 +33,16 @@ The preprocessing steps include:
 The models are trained using cross-validation. Evaluation includes:
 - AUC Score: Main metric for model performance.
 - Confusion Matrix: To analyze misclassifications.
+
+## Results
+| Model Name             | AUROC on Train | AUROC on Validation |
+| ---------------------- | -------------- | ------------------- |
+| LogisticRegression     | 0.797910       | 0.791954            |
+| KNeighborsClassifier   |0.869958        |0.746194             |
+| DecisionTreeClassifier |0.791737        |0.776121             |
+| RandomForestClassifier |0.857783        |0.80122              |
+| XGBClassifier          |0.837919        |0.80117              |
+| LGBMClassifier         |0.820159        |0.801564             |
 
 ## Future Work
 - Try advanced feature selection techniques.
