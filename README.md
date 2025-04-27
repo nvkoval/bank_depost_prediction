@@ -59,6 +59,7 @@ The models are trained using cross-validation. Evaluation includes:
 - Deploy the model as an API.
 
 ## Repository Structure
+```
 ├── data/                              # Folder for dataset and model files
 ├── bank_deposit_EDA.ipynb             # Exploratory Data Analysis (EDA) notebook
 ├── bank_deposit.ipynb                 # Main modeling and training notebook
@@ -68,3 +69,4 @@ The models are trained using cross-validation. Evaluation includes:
 ├── utils.py                           # Utility functions for the project
 ├── requirements.txt                   # List of required Python packages
 └── README.md                          # Project documentation
+```
